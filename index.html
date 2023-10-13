@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel monitor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div id="alert" class="alert">
+      <span class="closebtn">&times;</span>  
+      <strong>Cuidado!</strong> A Temperatura esta acima de 80°C
+      <button id="alert" onchange="toggleDiv()"></button>
+    </div>
+
+    <div class="cards">
+      <label id="summary">
+        <input type="checkbox" />
+        <article>
+          <div class="front">
+            <header>
+              <h2>Pressão</h2>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </header>
+            <var id="p_press">0</var>
+            <h3>Pressão</h3>
+            <!-- <h4>Completed: 13</h4> -->
+            <button id="btn_texto" onclick="obterDados()"> </button>
+          </div>
+          <div class="back">
+            <header>
+              <h2>Informações</h2>
+              <span class="material-symbols-outlined"> close </span>
+            </header>
+            <p>Este card fornece informações cruciais sobre a monitorização da pressão.</p>
+          </div>
+        </article>
+      </label>
+      <label id="overdue">
+        <input type="checkbox" />
+        <article>
+          <div class="front">
+            <header>
+              <h2>Temperatura</h2>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </header>
+            <var id="p_temp">0</var>
+            <h3>Temperatura</h3>
+            <!-- <h4>Yesterday: 9</h4> -->
+          </div>
+          <div class="back">
+            <header>
+              <h2>informações</h2>
+              <span class="material-symbols-outlined"> close </span>
+            </header>
+            <p>Este card fornece informações cruciais sobre a monitorização da Temperatura.</p>
+          </div>
+        </article>
+      </label>
+      <label id="features">
+        <input type="checkbox" />
+        <article>
+          <div class="front">
+            <header>
+              <h2>Potência</h2>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </header>
+            <var id="p_Watt">0</var>
+            <h3>Potência</h3>
+            <!-- <h4>Implemented: 6</h4> -->
+          </div>
+          <div class="back">
+            <header>
+              <h2>Features</h2>
+              <span class="material-symbols-outlined"> close </span>
+            </header>
+            <p>Este card fornece informações cruciais sobre a monitorização da Potência</p>
+          </div>
+        </article>
+      </label>
+    </div>
+
+   
+
+    <script src="main.js"></script>
+  </body>
+</html>
