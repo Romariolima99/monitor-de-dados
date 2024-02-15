@@ -5,7 +5,7 @@ const p_press = document.getElementById('p_press');
 
 
 const obterDados=()=>{ 
-const endpoint =  "https://nodejs--romariogold99.repl.co/"
+const endpoint =  "https://af2b760c-62f6-4f4c-8215-05c992069e73-00-3ctk1j65kn6uc.picard.replit.dev/"
 fetch(endpoint)
 .then(res=> res.json())
 .then(dados => {
