@@ -1,36 +1,33 @@
-const p_temp = document.getElementById('p_temp');
-const p_Watt = document.getElementById('p_Watt');
-const p_press = document.getElementById('p_press');
+// Função que gera um objeto com dados aleatórios e exibe na tela
+ function gerarEDisplayDados() {
+  const temperatura = Math.round(Math.random() * 100);
+  const watt = Math.round(Math.random() * 100);
+  const pressao = Math.round(Math.random() * 100);
 
+  const dados = {
+    temperatura: temperatura,
+    watt: watt,
+    pressao: pressao,
 
+};  console.log(dados);
 
-const obterDados=()=>{ 
-const endpoint =  "https://af2b760c-62f6-4f4c-8215-05c992069e73-00-3ctk1j65kn6uc.picard.replit.dev/"
-fetch(endpoint)
-.then(res=> res.json())
-.then(dados => {
-    // console.log(dados)
+  if(temperatura >= 80){
+           toggleDiv();
+          console.log(toggleDiv + "chamou função")
+        }
 
-    if(dados.temperatura >= 80){
-       toggleDiv();
-      console.log(toggleDiv + "chamou função")
-    }
+  // Atualiza os elementos HTML com os dados gerados
+  document.getElementById('p_temp').textContent = temperatura + " °C";
+  document.getElementById('p_Watt').textContent = watt + " Watts";
+  document.getElementById('p_press').textContent = pressao  + " Psi";
+   
 
-    // if(dados.temperatura >= 80){
-    //   hideDiv();
-    //   setInterval(hideDiv, 4000);
-    //    return console.log(hideDiv + "chamou função")
-    
-    //   }
-
-    p_temp.innerHTML= dados.temperatura + " °C"
-    p_Watt.innerHTML= dados.Watt  + " Watts"
-    p_press.innerHTML= dados.pressao  + " Psi"
-})
-
+  // Chama a função novamente após 2 segundos
+  setTimeout(gerarEDisplayDados, 3000);
 }
 
-setInterval(obterDados,  3000);
+// Iniciar a geração de dados imediatamente
+gerarEDisplayDados();
 
 function toggleDiv ()  {
 var show = document.getElementById("alert");
@@ -45,3 +42,4 @@ show.style.display = "block";
       }
 
       setInterval(hideDiv,  5000);
+
