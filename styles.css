@@ -122,6 +122,7 @@ article p {
   margin-bottom: 15px;
   display: none;
   transition: opacity 0.5s;
+  position: top;
 }
 
 .closebtn {
@@ -144,10 +145,37 @@ button {
 }
 
 @media(min-width:320px) and (max-width:900px) {
-  body .cards{
+  .cards{
      display: flex; 
      flex-direction: column; 
-     /* align-items: center;  */
-     /* justify-content: center;  */
+     height: 90vh;
   }
 }
+
+@media(min-width:320px) and (max-width:900px) {
+    .front .back{
+     width: 40%;
+     height: 40%;
+  }
+} 
+
+
+@media(min-width:320px) and (max-width:900px) {
+  article {
+   width: 230px;
+   height: 230px;
+
+} }
+
+@media(min-width:320px) and (max-width:900px) {
+ #p_press, #p_temp , #p_Watt , h3{
+  font-size: 25px
+
+} }
+
+@media(min-width:320px) and (max-width:900px) {
+  .back p{
+   font-size: 14px;
+
+ 
+ } }
