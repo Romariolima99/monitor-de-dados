@@ -18,9 +18,7 @@ O painel de monitoramento de dados é uma aplicação web que permite monitorar 
 <img src="https://i.imgur.com/1CqKVVh.png" alt="GIF" data-canonical-src="https://i.imgur.com/1CqKVVh.png" style="max-width: 50%;">
 
 
-- **Node.JS:** O projeto consome uma API em Node.js, para gerar os dados.
-
-<img src="https://i.imgur.com/Xs4I7pB.png" alt="GIF" data-canonical-src="https://i.imgur.com/Xs4I7pB.png" style="max-width: 50%;">
+- **Veja o Projeto:** <a href="https://monitor-de-dados.vercel.app/ target="_blank">Veja o Projeto clicando aqui</a>.
 
 ## Pré-requisitos
 
@@ -32,6 +30,6 @@ O painel de monitoramento de dados é uma aplicação web que permite monitorar 
 
 1. Clone este repositório:
 ```js
-    git clone https://github.com/Romariolima99/monitor_de_dados.git
+    git clone https://github.com/Romariolima99/monitor-de-dados.git
  ```
 
