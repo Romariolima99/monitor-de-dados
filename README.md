@@ -18,7 +18,7 @@ O painel de monitoramento de dados é uma aplicação web que permite monitorar 
 <img src="https://i.imgur.com/1CqKVVh.png" alt="GIF" data-canonical-src="https://i.imgur.com/1CqKVVh.png" style="max-width: 50%;">
 
 
-- **Veja o Projeto:** <a href="https://monitor-de-dados.vercel.app/ target="  "_blank">Veja o Projeto clicando aqui</a>.
+- **Veja o Projeto:** <a href="https://monitor-de-dados.vercel.app/ target="_blank">Veja o Projeto clicando aqui</a>.
 
 ## Pré-requisitos
 
