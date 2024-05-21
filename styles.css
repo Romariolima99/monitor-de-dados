@@ -121,22 +121,23 @@ article p {
   transition: opacity 0.6s;
   margin-bottom: 15px;
   display: none;
-  transition: opacity 0.5s;
-  position: fixed; 
-  top: 0; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
-  z-index: 1000; 
+  position: fixed; /* For positioning at the top */
+  top: 20px; /* Adjust this value to add space below the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for better visibility */
+  z-index: 1000; /* Ensures it appears above other content */
 }
 
 @media screen and (max-width: 600px) {
   .alert {
-    width: 80%; 
-    padding: 10px; 
-    font-size: 14px;
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 10px; /* Smaller padding */
+    font-size: 14px; /* Smaller text size */
+    top: 10px; /* Adjust the top value for smaller screens */
   }
 }
+
 
 
 
