@@ -20,11 +20,6 @@ O painel de monitoramento de dados é uma aplicação web que permite monitorar 
 
 - **Para ver o projeto em ação:** <a href="https://monitor-de-dados.vercel.app/" target="_blank">Veja o Projeto clicando aqui</a>.
 
-## Pré-requisitos
-
-- Certifique-se de ter instalado os seguintes requisitos antes de executar o projeto:
-
-- [Node.js](https://nodejs.org/)
 
 ## Instalação
 
