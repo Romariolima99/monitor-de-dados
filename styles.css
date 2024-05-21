@@ -122,8 +122,23 @@ article p {
   margin-bottom: 15px;
   display: none;
   transition: opacity 0.5s;
-  position: top;
+  position: fixed; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  z-index: 1000; 
 }
+
+@media screen and (max-width: 600px) {
+  .alert {
+    width: 80%; 
+    padding: 10px; 
+    font-size: 14px;
+  }
+}
+
+
 
 .closebtn {
   margin-left: 15px;
